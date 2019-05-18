@@ -59,6 +59,13 @@ LAYER_RW_PROPERTY(shimmeringBeginTime, setShimmeringBeginTime:, CFTimeInterval)
   }
 }
 
+- (void)didAddSubview:(UIView *)subview
+{
+  if (subview != _contentView) {
+   [self setContentView: subview];
+  }
+}
+
 - (void)layoutSubviews
 {
   // Autolayout requires these to be set on the UIView, not the CALayer.
