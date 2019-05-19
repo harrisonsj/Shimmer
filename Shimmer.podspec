@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'Shimmer'
-  spec.version      = '1.0.2'
+  spec.version      = '1.0.3'
   spec.license      =  { :type => 'BSD' }
   spec.homepage     = 'https://github.com/facebook/Shimmer'
   spec.authors      = { 'Grant Paul' => 'shimmer@grantpaul.com', 'Kimon Tsinteris' => 'kimon@mac.com' }
