@@ -349,6 +349,14 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
     _maskLayer.endPoint = CGPointMake(0.0, endPoint);
     _maskLayer.position = CGPointMake(0.0, -travelDistance);
     _maskLayer.bounds = CGRectMake(0.0, 0.0, CGRectGetWidth(_contentLayer.bounds), fullShimmerLength);
+   
+  } else if(_shimmeringDirection == FBShimmerDirectionDiagonal) {
+    
+    _maskLayer.startPoint = CGPointMake(startPoint, 0.0);
+    _maskLayer.endPoint = CGPointMake(endPoint, 1.0);
+    _maskLayer.position = CGPointMake(-travelDistance, 0.0);
+    _maskLayer.bounds = CGRectMake(0.0, 0.0, fullShimmerLength, CGRectGetHeight(_contentLayer.bounds));
+ 
   } else {
     _maskLayer.startPoint = CGPointMake(startPoint, 0.0);
     _maskLayer.endPoint = CGPointMake(endPoint, 0.0);
