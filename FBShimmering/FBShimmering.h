@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger, FBShimmerDirection) {
   FBShimmerDirectionUp,
   //! Shimmer animation goes from above to below
   FBShimmerDirectionDown,
+ 
+  FBShimmerDirectionDiagonal,
 };
 
 static const float FBShimmerDefaultBeginTime = CGFLOAT_MAX;
